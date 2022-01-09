@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nationalize API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="tittle">Nationalize API Task</h1>
+    <p id="description">Predict the nationality based on name and display details</p>
+
+    <!-- Container for input name for search nationality based on name.
+         and, Display top two country and probability details, once get success response from api  -->
+
+    <div class="predict-container">
+      <div> <label for="predict-name"> Enter Name : </label>
+        <input type="search" id="predict-name" class="inputField" placeholder="Enter name here" >
+        <button onclick="predict()">Predict</button>
+      </div>
+      <div id="display"></div>
+
+    </div>
+
+    <!-- implementing search filters based on name and country -->
+    <div class="filter-container">
+      <h3>Apply Filter</h3>
+      <div> <label for="search-box-name"> On Name : </label><input type="search" placeholder="Search name here"
+          class="inputField" id="search-box-name"></div>
+      <div> <label for="search-box-country"> On Country Id: </label><input type="search"
+          placeholder="Search country id here" class="inputField" id="search-box-country"></div>
+      <div> <label for="all-details"> Display all the data predicted yet : </label> <button id="all-details">Display
+          All</button></div>
+
+      <div id="table-display"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
